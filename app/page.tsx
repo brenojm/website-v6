@@ -5,10 +5,10 @@ import About from "./components/About";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Sidebar />
       <Landing />
       <About />
-    </div>
+    </>
   );
 }
