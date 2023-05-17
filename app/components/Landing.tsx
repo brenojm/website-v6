@@ -3,7 +3,6 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import Image from "next/image";
-import Link from "next/link";
 import { routes } from "./routes";
 import { BsArrowRight } from "react-icons/bs";
 function Landing() {
@@ -47,14 +46,14 @@ function Landing() {
         {/* nav links */}
         <div className="flex flex-wrap items-center lg:justify-start justify-center mt-4">
           {routes.map((route, index) => (
-            <Link
+            <a
               key={index}
               href={route.path}
-              className="flex items-center lg:text-base text-xs py-3 px-8 border-2 hover:border-orange hover:text-orange hover:ease-out hover:duration-200 rounded-xl lg:mr-4 mr-2 my-1"
+              className="flex items-center lg:text-base text-xs py-3 px-8 border-2 hover:ease-out hover:duration-200 rounded-xl lg:mr-4 mr-2 my-1"
             >
               <span>{route.name}</span>
               <BsArrowRight className="ml-0.5" />
-            </Link>
+            </a>
           ))}
         </div>
       </div>
