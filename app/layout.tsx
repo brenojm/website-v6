@@ -11,7 +11,7 @@ export const metadata = {
   title: "Arpan Neupane",
   description: "Developer Portfolio",
   icons: {
-    icon: "@app/favicon.png",
+    icon: "/favicon.png",
   },
 };
 
