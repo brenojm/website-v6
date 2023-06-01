@@ -6,9 +6,9 @@ function Skills() {
     <div className="flex flex-col">
       {/* Languages */}
       <div className="flex flex-col lg:text-xl md:text-lg text-base mb-3">
-        <div className="flex items-center text-purple font-semibold mb-2">
-          <IoMdPlay className="mr-2" />
-          Languages
+        <div className="flex items-center mb-2">
+          <IoMdPlay className="mr-2 text-purple" />
+          <p className="font-semibold">Languages</p>
         </div>
 
         {/* Proficient */}
@@ -44,9 +44,9 @@ function Skills() {
 
       {/* Frameworks */}
       <div className="flex flex-col lg:text-xl md:text-lg text-base mb-3">
-        <div className="flex items-center text-purple font-semibold mb-2">
-          <IoMdPlay className="mr-2" />
-          Frameworks
+        <div className="flex items-center font-semibold mb-2">
+          <IoMdPlay className="mr-2 text-purple" />
+          <p className="font-semibold">Frameworks</p>
         </div>
 
         {/* Proficient */}
@@ -88,9 +88,9 @@ function Skills() {
 
       {/* Tools */}
       <div className="flex flex-col lg:text-xl md:text-lg text-base">
-        <div className="flex items-center text-purple font-semibold mb-2">
-          <IoMdPlay className="mr-2" />
-          Tools
+        <div className="flex items-center font-semibold mb-2">
+          <IoMdPlay className="mr-2 text-purple" />
+          <p className="font-semibold">Tools</p>
         </div>
 
         {/* Proficient */}
