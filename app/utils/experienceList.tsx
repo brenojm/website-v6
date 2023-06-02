@@ -9,12 +9,12 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    company: "Twine",
+    company: "Y Combinator Startup",
     position: "Software Engineer",
     time: "May '23 - Present",
-    image: "/twine.svg",
-    width: 80,
-    height: 80,
+    image: "/y-combinator.svg",
+    width: 75,
+    height: 75,
   },
   {
     company: "YouTube",
