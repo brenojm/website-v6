@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-const Fade = require("react-reveal/Fade");
 import { experiences } from "../utils/experienceList";
 import Card from "./Card";
 
@@ -12,26 +11,22 @@ function Experience() {
 
       <div className="w-full flex justify-center lg:pt-0 pt-12">
         <div className="flex-1">
-          <Fade left>
-            <h2 className="lg:mb-16 mb-8 font-bold lg:text-5xl text-3xl underline underline-offset-8 text-center">
-              experience
-            </h2>
-          </Fade>
-          <Fade right>
-            <div className="flex justify-center items-center flex-wrap">
-              {experiences.map((experience, index) => (
-                <Card
-                  key={index}
-                  company={experience.company}
-                  position={experience.position}
-                  time={experience.time}
-                  image={experience.image}
-                  width={experience.width}
-                  height={experience.height}
-                />
-              ))}
-            </div>
-          </Fade>
+          <h2 className="lg:mb-16 mb-8 font-bold lg:text-5xl text-3xl underline underline-offset-8 text-center">
+            experience
+          </h2>
+          <div className="flex justify-center items-center flex-wrap">
+            {experiences.map((experience, index) => (
+              <Card
+                key={index}
+                company={experience.company}
+                position={experience.position}
+                time={experience.time}
+                image={experience.image}
+                width={experience.width}
+                height={experience.height}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
