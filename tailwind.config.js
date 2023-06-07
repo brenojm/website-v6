@@ -17,6 +17,7 @@ module.exports = {
       blue: "#008CFF",
       orange: "#FF7C30",
       purple: "#392672",
+      purpleLight: "#f7f5ff",
       proficientBg: "#E7FCF5",
       intermediateBg: "#FAFAF3",
       beginnerBg: "#F5F6F5",

@@ -67,6 +67,7 @@ function Landing() {
       <Fade right>
         <div>
           <Image
+            priority={true}
             src="/programmer-gif.gif"
             alt="Home Gif"
             width={505}

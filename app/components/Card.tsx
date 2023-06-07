@@ -16,9 +16,13 @@ function Card(props: Experience) {
         />
       </div>
       <div className="flex flex-col w-3/5 ml-2">
-        <div className="title font-semibold text-lg">{props.company}</div>
-        <div className="position flex flex-wrap">{props.position}</div>
-        <div className="time font-light text-sm">{props.time}</div>
+        <div className="title font-semibold sm:text-lg text-sm mb-1">
+          {props.company}
+        </div>
+        <div className="position flex flex-wrap sm:text-base text-xs mb-1">
+          {props.position}
+        </div>
+        <div className="time font-light text-xs">{props.time}</div>
       </div>
     </div>
   );
