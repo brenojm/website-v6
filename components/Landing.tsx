@@ -1,9 +1,7 @@
-"use client";
-
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import Image from "next/image";
-import { routes } from "../utils/routes";
+import { routes } from "@/utils/routes";
 import { BsArrowRight } from "react-icons/bs";
 
 function Landing() {

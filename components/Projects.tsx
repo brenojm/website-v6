@@ -1,8 +1,6 @@
-"use client";
-
 import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
-import { completedProjects } from "../utils/projectsList";
+import { completedProjects } from "@/utils/projectsList";
 
 function Projects() {
   return (
@@ -40,8 +38,8 @@ function Projects() {
           </div>
         </div>
       </div>
-      <footer className="bottom-0 text-center text-sm flex flex-col">
-        <span className="mb-2">© 2023 Arpan Neupane. All Rights Reserved.</span>
+      <footer className="bottom-0 text-center text-sm flex flex-col w-screen">
+        <span className="mb-3">© 2023 Arpan Neupane. All Rights Reserved.</span>
         <span>Made with ❤️ by Arpan Neupane.</span>
       </footer>
     </section>

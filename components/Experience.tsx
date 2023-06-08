@@ -1,7 +1,5 @@
-"use client";
-
 import React from "react";
-import { experiences } from "../utils/experienceList";
+import { experiences } from "@/utils/experienceList";
 import Card from "./Card";
 
 function Experience() {

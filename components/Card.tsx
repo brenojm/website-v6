@@ -1,7 +1,5 @@
-"use client";
-
 import React from "react";
-import { Experience } from "../utils/experienceList";
+import { Experience } from "@/utils/experienceList";
 import Image from "next/image";
 
 function Card(props: Experience) {

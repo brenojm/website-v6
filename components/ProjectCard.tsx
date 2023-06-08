@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Project } from "../utils/projectsList";
+import { Project } from "@/utils/projectsList";
 import Image from "next/image";
 
 function ProjectCard(props: Project) {
   return (
-    <div className="p-5 mx-3 mb-6 flex flex-col justify-center items-center rounded-md cursor-pointer shadow-lg">
+    <div className="p-5 mx-3 mb-6 flex flex-col justify-center items-center rounded-md shadow-lg">
       <div className="text-xl mb-2 text-fgText">{props.title}</div>
       <div className="mb-4">
         <Image
