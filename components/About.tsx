@@ -7,7 +7,6 @@ function About() {
 
   const age = Math.floor(milliseconds / 1000 / 60 / 60 / 24 / 365);
 
-  const year = new Date().getFullYear();
   return (
     <section id="about" className="w-full min-h-screen flex items-center">
       {/* about & skills display */}

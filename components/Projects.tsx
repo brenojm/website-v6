@@ -3,6 +3,9 @@ import ProjectCard from "./ProjectCard";
 import { completedProjects } from "@/utils/projectsList";
 
 function Projects() {
+  const date = new Date();
+  const year = date.getFullYear();
+
   return (
     <section
       id="projects"
@@ -39,7 +42,9 @@ function Projects() {
         </div>
       </div>
       <footer className="bottom-0 text-center text-sm flex flex-col w-screen">
-        <span className="mb-3">© 2023 Arpan Neupane. All Rights Reserved.</span>
+        <span className="mb-3">
+          © {year} Arpan Neupane. All Rights Reserved.
+        </span>
         <span>Made with ❤️ by Arpan Neupane.</span>
       </footer>
     </section>
