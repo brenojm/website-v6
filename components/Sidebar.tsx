@@ -10,7 +10,7 @@ function Sidebar() {
           key={index}
           target="__blank"
           href={link.path}
-          className={`lg:text-4xl text-3xl cursor-pointer ${link.hover} hover:ease-in-out hover:duration-100`}
+          className="lg:text-4xl text-3xl cursor-pointer"
         >
           {link.icon}
         </Link>

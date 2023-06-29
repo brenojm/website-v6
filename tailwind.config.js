@@ -24,6 +24,8 @@ module.exports = {
       proficientBorder: "#4C7564",
       intermediateBorder: "#C5C830",
       beginnerBorder: "#838789",
+      ghPurple: "#6e5494",
+      lkdnBlue: "#0072b1",
     },
   },
   plugins: [],
