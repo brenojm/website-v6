@@ -71,7 +71,7 @@ export const completedProjects: Project[] = [
     desc: "Weather Wizard is a weather app created using React and React Native for web and mobile versions, respectively. Users may search any city, and the app will instantly display the weather information for that city.",
     technologiesUsed: ["React", "React Native", "Expo"],
     image: "/projectImgs/weatherwiz.png",
-    projectLink: "",
+    projectLink: "https://weatherwizard.vercel.app/",
     gitLink: "https://github.com/arpanneupane19/Weather-Wizard-Web",
     alt: "Weather Wizard",
     width: 270,
