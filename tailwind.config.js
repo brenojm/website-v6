@@ -26,6 +26,7 @@ module.exports = {
       beginnerBorder: "#838789",
       ghPurple: "#6e5494",
       lkdnBlue: "#0072b1",
+      modalBackdrop: "rgba(0, 0, 0, 0.5)",
     },
   },
   plugins: [],
