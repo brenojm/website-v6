@@ -18,9 +18,9 @@ function Projects() {
             <h2 className="font-bold lg:text-5xl text-3xl underline underline-offset-8 mb-4">
               projects
             </h2>
-            {/* <span className="tracking-normal font-light">
-                Click on an item to learn more!
-              </span> */}
+            <span className="tracking-normal font-light">
+              Click on an item to learn more!
+            </span>
           </div>
           <div className="flex justify-center items-center flex-wrap">
             {completedProjects.map((project, index) => (
