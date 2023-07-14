@@ -16,8 +16,4 @@ export const routes: Route[] = [
     name: "projects",
     path: "/#projects",
   },
-  // {
-  //   name: "gear",
-  //   path: "/gear",
-  // },
 ];
