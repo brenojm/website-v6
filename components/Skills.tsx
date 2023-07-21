@@ -46,7 +46,7 @@ function Skills() {
       <div className="flex flex-col lg:text-xl md:text-lg text-base mb-3">
         <div className="flex items-center font-semibold mb-2">
           <IoMdPlay className="mr-2 text-purple" />
-          <p className="font-semibold">Frameworks</p>
+          <p className="font-semibold">Frameworks/Libraries</p>
         </div>
 
         {/* Proficient */}
@@ -58,7 +58,7 @@ function Skills() {
             <p className="text-sm font-semibold">Flask</p>
           </div>
           <div className="p-2 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Node</p>
+            <p className="text-sm font-semibold">Node.js</p>
           </div>
           <div className="p-2 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
             <p className="text-sm font-semibold">TailwindCSS</p>
@@ -72,6 +72,9 @@ function Skills() {
         <div className="intermediate-row flex flex-wrap ml-6">
           <div className="p-2 bg-intermediateBg border-2 border-intermediateBorder rounded-xl m-1 flex items-center h-8">
             <p className="text-sm font-semibold">React Native</p>
+          </div>
+          <div className="p-2 bg-intermediateBg border-2 border-intermediateBorder rounded-xl m-1 flex items-center h-8">
+            <p className="text-sm font-semibold">Next.js</p>
           </div>
           <div className="p-2 bg-intermediateBg border-2 border-intermediateBorder rounded-xl m-1 flex items-center h-8">
             <p className="text-sm font-semibold">Chakra UI</p>
