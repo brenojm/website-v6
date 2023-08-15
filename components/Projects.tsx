@@ -41,7 +41,7 @@ function Projects() {
           </div>
         </div>
       </div>
-      <footer className="bottom-0 text-center text-sm flex flex-col w-screen">
+      <footer className="bottom-0 text-center text-sm flex flex-col w-full">
         <span className="mb-3">
           © {year} Arpan Neupane. All Rights Reserved.
         </span>
