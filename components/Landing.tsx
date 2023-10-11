@@ -6,13 +6,13 @@ import { BsArrowRight } from "react-icons/bs";
 
 function Landing() {
   const words = [
-    "cool products.",
+    "aviation.",
     "teaching.",
     "software.",
     "learning.",
     "business.",
     "startups.",
-    "photography.",
+    "racing.",
   ];
 
   return (
