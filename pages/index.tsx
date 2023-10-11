@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="tracking-wider">
       <Head>
-        <title>Arpan Neupane</title>
+        <title>Breno Magrani</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Sidebar />

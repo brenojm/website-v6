@@ -14,10 +14,10 @@ function Skills() {
         {/* Proficient */}
         <div className="proficient-row flex flex-wrap ml-6">
           <div className="py-1 px-3 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Python</p>
+            <p className="text-sm font-semibold">JavaScript</p>
           </div>
           <div className="py-1 px-3 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">JavaScript</p>
+            <p className="text-sm font-semibold">C#</p>
           </div>
           <div className="py-1 px-3 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
             <p className="text-sm font-semibold">HTML/CSS</p>
@@ -32,12 +32,15 @@ function Skills() {
           <div className="py-1 px-3 bg-intermediateBg border-2 border-intermediateBorder rounded-xl m-1 flex items-center h-8">
             <p className="text-sm font-semibold">SQL</p>
           </div>
+          <div className="py-1 px-3 bg-intermediateBg border-2 border-intermediateBorder rounded-xl m-1 flex items-center h-8">
+            <p className="text-sm font-semibold">Java</p>
+          </div>
         </div>
 
         {/* Beginner */}
         <div className="beginner-row flex flex-wrap ml-6">
           <div className="py-1 px-3 bg-beginnerBg border-2 border-beginnerBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Java</p>
+            <p className="text-sm font-semibold">Python</p>
           </div>
         </div>
       </div>
@@ -55,16 +58,13 @@ function Skills() {
             <p className="text-sm font-semibold">React</p>
           </div>
           <div className="p-2 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Flask</p>
-          </div>
-          <div className="p-2 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
             <p className="text-sm font-semibold">Node.js</p>
           </div>
           <div className="p-2 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">TailwindCSS</p>
+            <p className="text-sm font-semibold">.NET</p>
           </div>
           <div className="p-2 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">UIkit</p>
+            <p className="text-sm font-semibold">Material UI</p>
           </div>
         </div>
 
@@ -77,14 +77,20 @@ function Skills() {
             <p className="text-sm font-semibold">Next.js</p>
           </div>
           <div className="p-2 bg-intermediateBg border-2 border-intermediateBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Chakra UI</p>
+            <p className="text-sm font-semibold">Bootstrap</p>
+          </div>
+          <div className="p-2 bg-intermediateBg border-2 border-intermediateBorder rounded-xl m-1 flex items-center h-8">
+            <p className="text-sm font-semibold">Spring</p>
           </div>
         </div>
 
         {/* Beginner */}
         <div className="beginner-row flex flex-wrap ml-6">
           <div className="p-2 bg-beginnerBg border-2 border-beginnerBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Pygame</p>
+            <p className="text-sm font-semibold">TailwindCSS</p>
+          </div>
+          <div className="p-2 bg-beginnerBg border-2 border-beginnerBorder rounded-xl m-1 flex items-center h-8">
+            <p className="text-sm font-semibold">Django</p>
           </div>
         </div>
       </div>
@@ -102,30 +108,36 @@ function Skills() {
             <p className="text-sm font-semibold">Visual Studio Code</p>
           </div>
           <div className="p-2 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Git</p>
+            <p className="text-sm font-semibold">Visual Studio</p>
           </div>
           <div className="p-2 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Canva</p>
+            <p className="text-sm font-semibold">IntelliJ</p>
+          </div>
+          <div className="p-2 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
+            <p className="text-sm font-semibold">DBeaver</p>
+          </div>
+          <div className="p-2 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
+            <p className="text-sm font-semibold">Postman</p>
+          </div>
+          <div className="p-2 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
+            <p className="text-sm font-semibold">Git</p>
           </div>
         </div>
 
         {/* Intermediate */}
         <div className="intermediate-row flex flex-wrap ml-6">
           <div className="p-2 bg-intermediateBg border-2 border-intermediateBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">MongoDB</p>
+            <p className="text-sm font-semibold">Canva</p>
           </div>
           <div className="p-2 bg-intermediateBg border-2 border-intermediateBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Figma</p>
-          </div>
-          <div className="p-2 bg-intermediateBg border-2 border-intermediateBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Autodesk Fusion 360</p>
+            <p className="text-sm font-semibold">Insomnia</p>
           </div>
         </div>
 
         {/* Beginner */}
         <div className="beginner-row flex flex-wrap ml-6">
           <div className="p-2 bg-beginnerBg border-2 border-beginnerBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Xcode</p>
+            <p className="text-sm font-semibold">Figma</p>
           </div>
         </div>
       </div>

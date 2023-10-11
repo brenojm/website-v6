@@ -43,9 +43,9 @@ function Projects() {
       </div>
       <footer className="bottom-0 text-center text-sm flex flex-col w-full">
         <span className="mb-3">
-          © {year} Arpan Neupane. All Rights Reserved.
+          © {year} Breno Magrani. All Rights Reserved.
         </span>
-        <span>Made with ❤️ by Arpan Neupane.</span>
+        {/* <span>Made with ❤️ by Arpan Neupane.</span> */}
       </footer>
     </section>
   );

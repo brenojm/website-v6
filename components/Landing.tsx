@@ -25,7 +25,7 @@ function Landing() {
         <div className="intro-name">
           <h1 className="lg:text-2xl text-lg font-light">hi! i am</h1>
           <h1 className="lg:text-6xl text-3xl font-bold tracking-widest text-purple">
-            arpan neupane
+            breno magrani
           </h1>
         </div>
 
