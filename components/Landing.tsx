@@ -62,7 +62,7 @@ function Landing() {
       <div>
         <Image
           priority={true}
-          src="/programmer-gif.gif"
+          src="/programmer.gif"
           alt="Home Gif"
           width={505}
           height={505}
