@@ -52,39 +52,7 @@ function About() {
             to know more about my work or are interested in collaborating,
             please feel free to get in touch.{" "}
           </p>
-          {/* <p className="lg:mb-12 md:mb-8 mb-4 lg:text-xl md:text-lg text-base font-light">
-            {" "}
-            I am a {age}-year-old programmer in my sophomore year of high school
-            (class of 2026) with a passion for software engineering. I enjoy
-            building meaningful products that can express my creativity through
-            code.{" "}
-          </p>
-          <p className="lg:mb-12 md:mb-8 mb-4 lg:text-xl md:text-lg text-base font-light">
-            During my free time, I create content surrounding technology and
-            programming on{" "}
-            <a
-              className="text-blue"
-              href="https://youtube.com/c/ArpanNeupaneProductions"
-              target="__blank"
-            >
-              YouTube
-            </a>{" "}
-            teaching various concepts in different languages, frameworks, and
-            libraries.
-          </p>
-          <p className="lg:text-xl md:text-lg text-base font-light">
-            When I&apos;m not programming or making content, you can find me
-            playing the guitar, spending time with people, cooking, or reading.
-            I&apos;m also an author at{" "}
-            <a
-              className="text-blue"
-              href="https://themorningnews.com/news/author/arpanneupane/"
-              target="__blank"
-            >
-              TheMorningNews
-            </a>
-            .
-          </p> */}
+          
         </div>
         <div className="skills flex-1 lg:ml-8 ml-0 lg:w-1/2 w-1/1">
           <h2 className="lg:mb-16 mb-8 font-bold lg:text-5xl text-3xl underline underline-offset-8 text-left">
