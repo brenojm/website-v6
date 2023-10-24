@@ -5,15 +5,15 @@ export interface Route {
 
 export const routes: Route[] = [
   {
-    name: "about",
+    name: "About",
     path: "/#about",
   },
   {
-    name: "experience",
+    name: "Experience",
     path: "/#experience",
   },
   {
-    name: "projects",
+    name: "Projects",
     path: "/#projects",
   },
 ];

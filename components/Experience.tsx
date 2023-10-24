@@ -10,7 +10,7 @@ function Experience() {
       <div className="w-full flex justify-center lg:pt-0 pt-12">
         <div className="flex-1">
           <h2 className="lg:mb-16 mb-8 font-bold lg:text-5xl text-3xl underline underline-offset-8 text-center">
-            experience
+            Experience
           </h2>
           <div className="flex justify-center items-center flex-wrap">
             {experiences.map((experience, index) => (

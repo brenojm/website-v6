@@ -3,7 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 import Image from "next/image";
 import { routes } from "@/utils/routes";
 import { BsArrowRight } from "react-icons/bs";
-
+import { GrNavigate } from "react-icons/gr";
 function Landing() {
   const words = [
     "aviation.",
@@ -23,15 +23,15 @@ function Landing() {
       {/* introduction */}
       <div className="intro flex flex-col lg:text-left text-center">
         <div className="intro-name">
-          <h1 className="lg:text-2xl text-lg font-light">hi! i am</h1>
+          <h1 className="lg:text-2xl text-lg font-light">Hi! I am</h1>
           <h1 className="lg:text-6xl text-3xl font-bold tracking-widest text-purple">
-            breno magrani
+            {"<"}Breno Magrani{"/>"}
           </h1>
         </div>
 
         <div className="intro-bio mt-6">
           <p className="lg:text-lg text-base">
-            i am a self taught programmer with <br></br>an interest for{" "}
+            I am a self taught programmer with <br></br>an interest for{" "}
             <span className="text-orange font-semibold">
               <Typewriter
                 words={words}
@@ -52,7 +52,6 @@ function Landing() {
               className="flex items-center lg:text-base text-xs py-3 px-8 border-2 hover:ease-out hover:duration-200 rounded-xl lg:mr-4 mr-2 my-1"
             >
               <span>{route.name}</span>
-              <BsArrowRight className="ml-0.5" />
             </a>
           ))}
         </div>

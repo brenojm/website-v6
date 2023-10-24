@@ -16,7 +16,7 @@ function Projects() {
         <div className="flex-1">
           <div className="mb-8 text-center flex flex-col">
             <h2 className="font-bold lg:text-5xl text-3xl underline underline-offset-8 mb-4">
-              projects
+              Projects
             </h2>
             <span className="tracking-normal font-light">
               Click on an item to learn more!
