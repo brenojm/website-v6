@@ -12,7 +12,7 @@ function ProjectCard(props: Project) {
 
   return (
     <div
-      className="p-5 mx-3 mb-6 flex flex-col justify-center items-center rounded-md shadow-lg cursor-pointer"
+      className="p-5 mx-3 mb-6 flex flex-col justify-center items-center rounded-xl shadow-lg cursor-pointer"
       onClick={!modalVisible ? toggleModal : () => null}
     >
       {modalVisible ? (
@@ -37,7 +37,7 @@ function ProjectCard(props: Project) {
         {props.technologiesUsed.map((tool, index) => (
           <div
             key={index}
-            className="text-center font-medium mx-1 border-2 border-purple p-1 bg-purpleLight rounded-lg"
+            className="text-center font-medium mx-1 border-2 border-newBlue p-1 bg-purpleLight rounded-lg"
           >
             {tool}
           </div>
