@@ -7,7 +7,7 @@ export const eng: DictionaryProps = [
   { id: "landing2P2", stringName: "an interest for" },
 
   //RoutesButtons
-  { id: "buttonRoutesAbout", stringName: "<div>About</div>" },
+  { id: "buttonRoutesAbout", stringName: "About" },
   { id: "buttonRoutesExperience", stringName: "Experience" },
   { id: "buttonRoutesProjects", stringName: "Projects" },
 
