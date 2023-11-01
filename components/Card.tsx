@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Card(props: Experience) {
   return (
-    <div className="p-3 m-3 h-32 sm:w-96 w-full shadow-lg flex border-2 border-newBlue justify-evenly items-center rounded-xl">
+    <div className="p-3 m-3 h-32 sm:w-96 w-full shadow-lg flex justify-evenly items-center rounded-xl">
       <div className="w-2/5 flex justify-center items-center">
         <Image
           src={props.image}

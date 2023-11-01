@@ -5,19 +5,22 @@ import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Head from "next/head";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 export default function Home() {
   return (
-    <div className="tracking-wider">
-      <Head>
-        <title>Breno Magrani</title>
-        <link rel="icon" href="/favicon.png" />
-      </Head>
-      <Sidebar />
-      <Landing />
-      <About />
-      <Experience />
-      <Projects />
-    </div>
+    <LanguageProvider>
+      <div className="tracking-wider">
+        <Head>
+          <title>Breno Magrani</title>
+          <link rel="icon" href="/favicon.png" />
+        </Head>
+        <Sidebar />
+        <Landing />
+        <About />
+        <Experience />
+        <Projects />
+      </div>
+    </LanguageProvider>
   );
 }

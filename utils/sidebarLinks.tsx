@@ -10,14 +10,14 @@ export interface SidebarLink {
 export const sidebarLinks: SidebarLink[] = [
   {
     path: "https://github.com/brenojm",
-    icon: <VscGithub color="#597076" />,
+    icon: <VscGithub color="#392672" />,
   },
   {
-    path: "mailto:breno.jm25@gmail.com",
-    icon: <HiOutlineMail color="#597076" />,
+    path: "mailto:breno@magrani.com",
+    icon: <HiOutlineMail color="#392672" />,
   },
   {
     path: "https://www.linkedin.com/in/breno-magrani-88415222a/",
-    icon: <AiOutlineLinkedin color="#597076" />,
+    icon: <AiOutlineLinkedin color="#392672" />,
   },
 ];

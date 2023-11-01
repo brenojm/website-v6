@@ -3,6 +3,7 @@ import { skillsList } from "@/utils/skillsList";
 import { GoTerminal } from "react-icons/go";
 import { FaAccessibleIcon } from "react-icons/fa";
 import Chip from "@mui/material/Chip";
+import { findStringById } from "@/languageSupplier/languageSupplier";
 function Skills() {
   return (
     <div className="flex flex-col">
@@ -13,7 +14,7 @@ function Skills() {
         >
           <div className="flex items-center mb-2">
             <GoTerminal className="mr-2" />
-            <p className="font-semibold">{skillCat.category}</p>
+            <p className="font-semibold">{findStringById(skillCat.category)}</p>
           </div>
 
           {skillCat.levels.map((level, index) => {

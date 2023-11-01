@@ -14,7 +14,7 @@ export interface NameInterface {
 
 export const skillsList: SkillsInterface[] = [
   {
-    category: "Languages",
+    category: "skillListLanguages",
     levels: [
       {
         level: "Proficient",
@@ -66,7 +66,7 @@ export const skillsList: SkillsInterface[] = [
     ],
   },
   {
-    category: "Frameworks/Libraries",
+    category: "skillListFrameworksLibraries",
     levels: [
       {
         level: "Proficient",
@@ -125,7 +125,7 @@ export const skillsList: SkillsInterface[] = [
     ],
   },
   {
-    category: "Tools",
+    category: "skillListTools",
     levels: [
       {
         level: "Proficient",

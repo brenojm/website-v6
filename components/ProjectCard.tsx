@@ -37,7 +37,7 @@ function ProjectCard(props: Project) {
         {props.technologiesUsed.map((tool, index) => (
           <div
             key={index}
-            className="text-center font-medium mx-1 border-2 border-newBlue p-1 bg-purpleLight rounded-lg"
+            className="text-center font-medium mx-1 border-2 border-purple p-1 bg-purpleLight rounded-lg"
           >
             {tool}
           </div>

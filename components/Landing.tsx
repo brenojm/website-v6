@@ -4,16 +4,18 @@ import { routes } from "@/utils/routes";
 import { BiRightArrowAlt } from "react-icons/bi";
 import { GrNavigate } from "react-icons/gr";
 import { Button } from "@mui/material";
+import { LanguageProps } from "@/utils/interfaces";
+import { findStringById, findStringByName } from "@/languageSupplier/languageSupplier";
 
 function Landing() {
   const words = [
-    "aviation.",
-    "teaching.",
-    "software.",
-    "learning.",
-    "business.",
-    "startups.",
-    "racing.",
+    findStringById("LandingTypeWords1"),
+    findStringById("LandingTypeWords2"),
+    findStringById("LandingTypeWords3"),
+    findStringById("LandingTypeWords4"),
+    findStringById("LandingTypeWords5"),
+    findStringById("LandingTypeWords6"),
+    findStringById("LandingTypeWords7"),
   ];
 
   return (
@@ -24,16 +26,16 @@ function Landing() {
       {/* introduction */}
       <div className="intro flex flex-col lg:text-left text-center">
         <div className="intro-name">
-          <h1 className="lg:text-2xl text-lg font-light">Hello World! My name is</h1>
-          <h1 className="lg:text-6xl text-3xl font-bold tracking-widest text-orange">
+          <h1 className="lg:text-2xl text-lg font-light">{findStringById("landing1")}</h1>
+          <h1 className="lg:text-6xl text-3xl font-bold tracking-widest text-purple">
             {"<"}Breno Magrani{"/>"}
           </h1>
         </div>
 
         <div className="intro-bio mt-6">
           <p className="lg:text-lg text-base">
-            I am a full-stack web developer with <br></br>an interest for{" "}
-            <span className="text-newBlue font-semibold">
+          {findStringById("landing2P1")}<br></br>{findStringById("landing2P2")}{" "}
+            <span className="text-orange font-semibold">
               <Typewriter
                 words={words}
                 loop={true}
@@ -66,7 +68,7 @@ function Landing() {
                 variant="outlined"
               >
                 <BiRightArrowAlt size={16} />
-                {route.name}
+                {findStringById(route.name)}
               </Button>
             </a>
           ))}
@@ -76,7 +78,7 @@ function Landing() {
       {/* gif */}
       <div>
         <img
-          src="https://i.pinimg.com/originals/b9/49/c8/b949c86a570df07a7440abe39405834c.gif"
+          src="https://cdn.dribbble.com/users/4382412/screenshots/15633275/media/085a014ebebde73e5cd510c93941f49a.gif"
           width={605}
           height={605}
         />
