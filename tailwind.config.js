@@ -15,7 +15,10 @@ module.exports = {
     },
     colors: {
       blue: "#008CFF",
+      newBlue: "#a3c6d9",
+      newGray: "#597076",
       orange: "#FF7C30",
+      yellow: "#C5C830",
       purple: "#392672",
       purpleLight: "#f7f5ff",
       proficientBg: "#E7FCF5",

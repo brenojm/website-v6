@@ -1,6 +1,6 @@
-import { HiOutlineAtSymbol } from "react-icons/hi";
-import { FaLinkedin } from "react-icons/fa";
-import { VscGithubInverted } from "react-icons/vsc";
+import { AiOutlineLinkedin } from "react-icons/ai";
+import { HiOutlineAtSymbol, HiOutlineMail } from "react-icons/hi";
+import { VscGithub, VscGithubInverted } from "react-icons/vsc";
 
 export interface SidebarLink {
   path: string;
@@ -10,14 +10,14 @@ export interface SidebarLink {
 export const sidebarLinks: SidebarLink[] = [
   {
     path: "https://github.com/brenojm",
-    icon: <VscGithubInverted />,
+    icon: <VscGithub color="#392672" />,
   },
   {
     path: "mailto:breno.jm25@gmail.com",
-    icon: <HiOutlineAtSymbol />,
+    icon: <HiOutlineMail color="#392672" />,
   },
   {
     path: "https://www.linkedin.com/in/breno-magrani-88415222a/",
-    icon: <FaLinkedin />,
+    icon: <AiOutlineLinkedin color="#392672" />,
   },
 ];

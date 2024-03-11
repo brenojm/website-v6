@@ -20,7 +20,7 @@ function Card(props: Experience) {
         <div className="position flex flex-wrap sm:text-base text-xs mb-1">
           {props.position}
         </div>
-        <div className="time font-light text-xs">{props.time}</div>
+        <div className="time text-newGray text-xs">{props.time}</div>
       </div>
     </div>
   );

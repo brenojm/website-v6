@@ -1,146 +1,66 @@
 import React from "react";
-import { IoMdPlay } from "react-icons/io";
-
+import { skillsList } from "@/utils/skillsList";
+import { GoTerminal } from "react-icons/go";
+import { FaAccessibleIcon } from "react-icons/fa";
+import Chip from "@mui/material/Chip";
+import { findStringById } from "@/languageSupplier/languageSupplier";
 function Skills() {
   return (
     <div className="flex flex-col">
-      {/* Languages */}
-      <div className="flex flex-col lg:text-xl md:text-lg text-base mb-3">
-        <div className="flex items-center mb-2">
-          <IoMdPlay className="mr-2 text-purple" />
-          <p className="font-semibold">Languages</p>
-        </div>
+      {skillsList.map((skillCat, index) => (
+        <div
+          key={`${index}`}
+          className="flex flex-col lg:text-xl md:text-lg text-base mb-3"
+        >
+          <div className="flex items-center mb-2">
+            <GoTerminal className="mr-2" />
+            <p className="font-semibold">{findStringById(skillCat.category)}</p>
+          </div>
 
-        {/* Proficient */}
-        <div className="proficient-row flex flex-wrap ml-6">
-          <div className="py-1 px-3 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">JavaScript</p>
-          </div>
-          <div className="py-1 px-3 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">C#</p>
-          </div>
-          <div className="py-1 px-3 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">HTML/CSS</p>
-          </div>
-        </div>
+          {skillCat.levels.map((level, index) => {
+            const classP: string = `py-1 px-3 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8`;
+            const classI: string = `py-1 px-3 bg-intermediateBg border-2 border-intermediateBorder rounded-xl m-1 flex items-center h-8`;
+            const classB: string = `py-1 px-3 bg-beginnerBg border-2 border-beginnerBorder rounded-xl m-1 flex items-center h-8`;
 
-        {/* Intermediate */}
-        <div className="intermediate-row flex flex-wrap ml-6">
-          <div className="py-1 px-3 bg-intermediateBg border-2 border-intermediateBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">TypeScript</p>
-          </div>
-          <div className="py-1 px-3 bg-intermediateBg border-2 border-intermediateBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">SQL</p>
-          </div>
-          <div className="py-1 px-3 bg-intermediateBg border-2 border-intermediateBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Java</p>
-          </div>
+            return (
+              <div
+                key={`${index}`}
+                className={`${level.level.toLowerCase()}-row flex flex-wrap ml-6`}
+              >
+                {level.names.map((name, index) => (
+                  <div
+                    key={`${index}`}
+                    className="py-1 m-1 flex items-center h-8"
+                  >
+                    <Chip
+                      style={{
+                        color: "#000",
+                        fontWeight: "bold",
+                        borderColor:
+                          level.level.toLocaleLowerCase() === "proficient"
+                            ? "#4C7564"
+                            : level.level.toLocaleLowerCase() === "intermediate"
+                            ? "#C5C830"
+                            : "#838789",
+                        borderWidth: 2,
+                        padding: "0.9rem",
+                      }}
+                      icon={
+                        <img
+                          style={{ width: "16px", height: "16px" }}
+                          src={name.imageUri}
+                        />
+                      }
+                      label={name.name}
+                      variant="outlined"
+                    />
+                  </div>
+                ))}
+              </div>
+            );
+          })}
         </div>
-
-        {/* Beginner */}
-        <div className="beginner-row flex flex-wrap ml-6">
-          <div className="py-1 px-3 bg-beginnerBg border-2 border-beginnerBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Python</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Frameworks */}
-      <div className="flex flex-col lg:text-xl md:text-lg text-base mb-3">
-        <div className="flex items-center font-semibold mb-2">
-          <IoMdPlay className="mr-2 text-purple" />
-          <p className="font-semibold">Frameworks/Libraries</p>
-        </div>
-
-        {/* Proficient */}
-        <div className="proficient-row flex flex-wrap ml-6">
-          <div className="p-2 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">React</p>
-          </div>
-          <div className="p-2 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Node.js</p>
-          </div>
-          <div className="p-2 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">.NET</p>
-          </div>
-          <div className="p-2 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Material UI</p>
-          </div>
-        </div>
-
-        {/* Intermediate */}
-        <div className="intermediate-row flex flex-wrap ml-6">
-          <div className="p-2 bg-intermediateBg border-2 border-intermediateBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">React Native</p>
-          </div>
-          <div className="p-2 bg-intermediateBg border-2 border-intermediateBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Next.js</p>
-          </div>
-          <div className="p-2 bg-intermediateBg border-2 border-intermediateBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Bootstrap</p>
-          </div>
-          <div className="p-2 bg-intermediateBg border-2 border-intermediateBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Spring</p>
-          </div>
-        </div>
-
-        {/* Beginner */}
-        <div className="beginner-row flex flex-wrap ml-6">
-          <div className="p-2 bg-beginnerBg border-2 border-beginnerBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">TailwindCSS</p>
-          </div>
-          <div className="p-2 bg-beginnerBg border-2 border-beginnerBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Django</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Tools */}
-      <div className="flex flex-col lg:text-xl md:text-lg text-base">
-        <div className="flex items-center font-semibold mb-2">
-          <IoMdPlay className="mr-2 text-purple" />
-          <p className="font-semibold">Tools</p>
-        </div>
-
-        {/* Proficient */}
-        <div className="proficient-row flex flex-wrap ml-6">
-          <div className="p-2 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Visual Studio Code</p>
-          </div>
-          <div className="p-2 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Visual Studio</p>
-          </div>
-          <div className="p-2 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">IntelliJ</p>
-          </div>
-          <div className="p-2 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">DBeaver</p>
-          </div>
-          <div className="p-2 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Postman</p>
-          </div>
-          <div className="p-2 bg-proficientBg border-2 border-proficientBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Git</p>
-          </div>
-        </div>
-
-        {/* Intermediate */}
-        <div className="intermediate-row flex flex-wrap ml-6">
-          <div className="p-2 bg-intermediateBg border-2 border-intermediateBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Canva</p>
-          </div>
-          <div className="p-2 bg-intermediateBg border-2 border-intermediateBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Insomnia</p>
-          </div>
-        </div>
-
-        {/* Beginner */}
-        <div className="beginner-row flex flex-wrap ml-6">
-          <div className="p-2 bg-beginnerBg border-2 border-beginnerBorder rounded-xl m-1 flex items-center h-8">
-            <p className="text-sm font-semibold">Figma</p>
-          </div>
-        </div>
-      </div>
+      ))}
     </div>
   );
 }

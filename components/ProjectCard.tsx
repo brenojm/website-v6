@@ -12,7 +12,7 @@ function ProjectCard(props: Project) {
 
   return (
     <div
-      className="p-5 mx-3 mb-6 flex flex-col justify-center items-center rounded-md shadow-lg cursor-pointer"
+      className="p-5 mx-3 mb-6 flex flex-col justify-center items-center rounded-xl shadow-lg cursor-pointer"
       onClick={!modalVisible ? toggleModal : () => null}
     >
       {modalVisible ? (

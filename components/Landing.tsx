@@ -1,18 +1,21 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import Image from "next/image";
 import { routes } from "@/utils/routes";
-import { BsArrowRight } from "react-icons/bs";
+import { BiRightArrowAlt } from "react-icons/bi";
+import { GrNavigate } from "react-icons/gr";
+import { Button } from "@mui/material";
+import { LanguageProps } from "@/utils/interfaces";
+import { findStringById, findStringByName } from "@/languageSupplier/languageSupplier";
 
 function Landing() {
   const words = [
-    "aviation.",
-    "teaching.",
-    "software.",
-    "learning.",
-    "business.",
-    "startups.",
-    "racing.",
+    findStringById("LandingTypeWords1"),
+    findStringById("LandingTypeWords2"),
+    findStringById("LandingTypeWords3"),
+    findStringById("LandingTypeWords4"),
+    findStringById("LandingTypeWords5"),
+    findStringById("LandingTypeWords6"),
+    findStringById("LandingTypeWords7"),
   ];
 
   return (
@@ -23,15 +26,15 @@ function Landing() {
       {/* introduction */}
       <div className="intro flex flex-col lg:text-left text-center">
         <div className="intro-name">
-          <h1 className="lg:text-2xl text-lg font-light">hi! i am</h1>
+          <h1 className="lg:text-2xl text-lg font-light">{findStringById("landing1")}</h1>
           <h1 className="lg:text-6xl text-3xl font-bold tracking-widest text-purple">
-            breno magrani
+            {"<"}Breno Magrani{"/>"}
           </h1>
         </div>
 
         <div className="intro-bio mt-6">
           <p className="lg:text-lg text-base">
-            i am a self taught programmer with <br></br>an interest for{" "}
+          {findStringById("landing2P1")}<br></br>{findStringById("landing2P2")}{" "}
             <span className="text-orange font-semibold">
               <Typewriter
                 words={words}
@@ -49,10 +52,24 @@ function Landing() {
             <a
               key={index}
               href={route.path}
-              className="flex items-center lg:text-base text-xs py-3 px-8 border-2 hover:ease-out hover:duration-200 rounded-xl lg:mr-4 mr-2 my-1"
+              className="flex items-center lg:text-base py-3 lg:mr-4 mr-2 my-1"
             >
-              <span>{route.name}</span>
-              <BsArrowRight className="ml-0.5" />
+              <Button
+                color="inherit"
+                style={{
+                  borderRadius: "40px",
+                  fontSize: "1.2rem",
+                  borderWidth: 2,
+                  textTransform: "none",
+
+                  borderColor:"#FF7C30"
+                }}
+                size="large"
+                variant="outlined"
+              >
+                <BiRightArrowAlt size={16} />
+                {findStringById(route.name)}
+              </Button>
             </a>
           ))}
         </div>
@@ -61,10 +78,9 @@ function Landing() {
       {/* gif */}
       <div>
         <img
-          src="/programmer.gif"
-          alt="Home Gif"
-          width={505}
-          height={505}
+          src="https://cdn.dribbble.com/users/4382412/screenshots/15633275/media/085a014ebebde73e5cd510c93941f49a.gif"
+          width={605}
+          height={605}
         />
       </div>
     </section>
