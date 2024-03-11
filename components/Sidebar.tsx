@@ -13,7 +13,7 @@ function Sidebar() {
 
   return (
     <>
-      <div className="fixed lg:inset-y-[1%] lg:inset-x-[90%] inset-y-[45%] inset-x-[90%]  lg:ml-6 ml-2">
+      <div className="fixed lg:inset-y-[1%] lg:inset-x-[90%] inset-y-[1%] inset-x-[80%]  lg:ml-6 ml-2">
         <InputLabel id="demo-simple-select-filled-label">Age</InputLabel>
         <Select
           labelId="demo-simple-select-filled-label"
