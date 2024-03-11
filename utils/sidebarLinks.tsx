@@ -13,7 +13,7 @@ export const sidebarLinks: SidebarLink[] = [
     icon: <VscGithub color="#392672" />,
   },
   {
-    path: "mailto:breno@magrani.com",
+    path: "mailto:breno.jm25@gmail.com",
     icon: <HiOutlineMail color="#392672" />,
   },
   {
